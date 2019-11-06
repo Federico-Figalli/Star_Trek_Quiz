@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inizio_gioco">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/answer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="410dp"
+                android:layout_height="250dp"
+                android:background="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/fluo_green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_layout"
+            android:layout_width="410dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/questions_chose"
+                android:layout_width="410dp"
+                android:layout_height="250dp">
+
+                <RadioButton
+                    android:id="@+id/question_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="RadioButton"
+                    android:textColor="@color/fluo_green"
+                    android:checkedButton= "1"/>
+
+
+                <RadioButton
+                    android:id="@+id/question_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="RadioButton"
+                    android:textColor="@color/fluo_green"
+                    android:checkedButton= "2"/>
+
+                <RadioButton
+                    android:id="@+id/question_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="RadioButton"
+                    android:textColor="@color/fluo_green"
+                    android:checkedButton= "3"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fluo_green"
+                android:text="Next" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Star Trek Questions</string>
+    <string name="home_image">home_image</string>
+    <string name="home_layout">home_layout</string>
+    <string name="testo_home">Alza il volume e tocca lo stemma</string>
+    <string name="bottone_img_home">button_start_game</string>>
+</resources>
